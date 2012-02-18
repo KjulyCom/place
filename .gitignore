@@ -2,3 +2,6 @@
 *~
 .*.sw[po]
 
+_site/*
+!_site/README.md
+
