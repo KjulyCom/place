@@ -1,0 +1,62 @@
+---
+layout: default
+title: Place - Kjuly.com
+---
+
+<div class="site-wrapper--big">
+  <!--div class="introduction">
+    <h1>PLACEs</h1>
+  </div-->
+
+  <div class="site-wrapper--small">
+
+	  <!--div class="filters">
+	    <hr>
+	    <p>Show me news related to</p>
+	    <div class="filters__categories">
+        <a href="#" id="filterDesign"><span class="icon__design"></span> design</a>
+	    	<a href="#" id="filterPhoto"><span class="icon__photo"></span> photos</a>
+	      <a href="#" id="filterArticle"><span class="icon__article"></span> articles</a>
+	      <a href="#" id="filterPersonal"><span class="icon__personal"></span> personal</a>
+	      <a href="#" id="filterOff" class="active"><span class="icon__cross"></span> show all</a>
+	    </div>
+	    <hr class="flip">
+    </div-->
+
+		<div class="timeline">
+			{% for post in site.posts %}
+				{% if post.category == 'timeline' %}
+			<div class="post__timeline {{ post.tags | join:' ' }}">
+				<div class="timeline__meta">
+					<time datetime="{{ post.date }}">
+						{{ post.date | date: "%B" }}<small>{{ post.date | date: "%Y" }}</small>
+						<div class="postmeta__icons">
+							{% if post.tags contains 'design' %}<span class="icon__design"></span>{% endif %}
+							{% if post.tags contains 'photo' %}<span class="icon__photo"></span>{% endif %}
+							{% if post.tags contains 'article' %}<span class="icon__article"></span>{% endif %}
+							{% if post.tags contains 'personal' %}<span class="icon__personal"></span>{% endif %}
+						</div>
+					</time>	
+				</div>
+			  <div class="timeline__body">
+					{% if post.quote %}
+						{{ post.content }}
+					<blockquote>
+						<span class="quote">&#8220;<br>&#8221;</span>
+					  <p>{{ post.quote }}</p>
+					</blockquote>
+					{% else %}
+						{{ post.content }}
+					{% endif %}
+					<hr>
+				</div>
+			</div>
+			  {% endif %}
+			{% endfor %}
+		</div>
+
+    {% include copy.html %}
+
+  </div>
+</div>
+

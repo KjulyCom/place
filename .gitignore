@@ -2,6 +2,8 @@
 *~
 .*.sw[po]
 
+config.rb
+.sass-cache/*
 _site/*
 !_site/README.md
 
