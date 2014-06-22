@@ -15,15 +15,17 @@ encoding:    nil
 future:      true
 show_drafts: nil
 limit_posts: 0
-pygments:    true
+highlighter: pygments
+#pygments:    true
 
 relative_permalinks: true
 
 permalink:     date
 paginate_path: 'page:num'
+paginate:      nil
 
-markdown:      maruku
-markdown_ext:  markdown,mkd,mkdn,md
+markdown:      kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
 textile_ext:   textile
 
 excerpt_separator: "\n\n"
@@ -43,6 +45,7 @@ maruku:
   png_engine: blahtex
   png_dir:    images/latex
   png_url:    /images/latex
+  fenced_code_blocks: true
 
 rdiscount:
   extensions: []
