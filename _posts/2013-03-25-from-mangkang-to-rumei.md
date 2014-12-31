@@ -4,7 +4,11 @@ category: timeline
 tags: Tibet China
 ---
 
-From Markam to Zogang, already in the territory of Tibet. A bro hiked with me and we met an automobile corps on the way. Finally, we stop at Rumeizhen for a rest. Such cold on the top of mountain!
+從「盲康」去「左貢」路上，已進入「西藏」康巴地區。
+
+路上遇到一隊人，考慮到人多難搭車，於是一哥們與我一起徒步上山，留下其他人在邊檢站搭車。路上遇到了一大隊「騎兵團」，沿路吃了不少灰，而且空氣很稀薄很冰冷，風也很大，但與他們互相招手示好的暖意消除了這些，到山頂後，向下望去甚是壯觀。
+
+「如美鎮」是當晚的落腳點，十五一晚住宿。也陸續與其他同伴匯合了。
 
 <img src="{{ site_url }}/img/posts/2013-03-25-01.jpg" alt="">
 <img src="{{ site_url }}/img/posts/2013-03-25-02.jpg" alt="">

@@ -4,8 +4,7 @@ category: timeline
 tags: Zhejiang China
 ---
 
-Walk in the park of Xishi Former Residence with my mom & aunt after dinner.
-It's lycoris. It has several nice names like Majusaka, Higan Bana, etc. As I know, it's called "彼岸花"(Bî Àn Huā) in Chinese.
+晚飯後與老媽、小姨一起在西施故里散步看到的花，感覺很有意思，只有花沒有葉。後來才知，它就是「彼岸花」，有葉的時候沒有花，有花的時候沒有葉。
 
 <img src="{{ site_url }}/img/posts/2009-03-15.jpg" alt="">
 

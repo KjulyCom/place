@@ -4,7 +4,7 @@ category: timeline
 tags: Yunnan China
 ---
 
-An old town called Shaxi. Really beautiful in rainy season.
+雨季的「沙溪」古鎮，寧靜、美。
 
 <img src="{{ site_url }}/img/posts/2012-08-25.jpg" alt="">
 
