@@ -1,74 +1,105 @@
 name: "Place - Kjuly.com"
 description: ""
 
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-include:     ['.htaccess']
-exclude:     []
-keep_files:  ['.git','.svn']
-gems:        []
-timezone:    nil
-encoding:    nil
+# Where things are
+source:          .
+destination:     ./_site
+#collections_dir: .
+plugins_dir:     _plugins
+layouts_dir:     _layouts
+data_dir:        _data
+includes_dir:    _includes
+collections: 
+  posts:  
+    output: true
 
-future:      true
-show_drafts: nil
+# Handling Reading
+safe: false
+include: ['.htaccess']
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files: ['.git','.svn']
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter: false
+
+# Filtering Content
+show_drafts: null
 limit_posts: 0
+future: true
+unpublished: false
+
+# Plugins
+whitelist: []
+plugins: []
+#plugins: [jekyll-paginate]
+
+# Conversion
+markdown: kramdown
+#highlighter: rouge
 highlighter: pygments
-#pygments:    true
-
-relative_permalinks: true
-
-permalink:     date
-paginate_path: 'page:num'
-paginate:      nil
-
-markdown:      kramdown
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-textile_ext:   textile
-
+lsi: false
 excerpt_separator: "\n\n"
+incremental: false
 
-safe:        false
-watch:       false    # deprecated
-server:      false    # deprecated
-host:        0.0.0.0
-port:        4000
-baseurl:     /
-url:         http://place.kjuly.com
-lsi:         false
+# Serving
+detach:  false
+host:    127.0.0.1
+port:    4000
+baseurl: "" # does not include hostname
+url: http://place.kjuly.com
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-  fenced_code_blocks: true
+# Outputting
+permalink: date
+paginate_path: /page:num
+timezone: null
 
+quiet:    false
+verbose:  false
+defaults: []
+
+liquid:
+  error_mode: warn
+
+# Markdown Processors
 rdiscount:
   extensions: []
 
 redcarpet:
   extensions: []
 
+#redcloth:
+#  hard_breaks: true
+
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+  show_warnings:  false
+  #enable_coderay: false
+  #
+  #coderay:
+  #  coderay_wrap: div
+  #  coderay_line_numbers: inline
+  #  coderay_line_numbers_start: 1
+  #  coderay_tab_width: 4
+  #  coderay_bold_every: 10
+  #  coderay_css: style
 
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+#maruku:
+#  use_tex:    false
+#  use_divs:   false
+#  png_engine: blahtex
+#  png_dir:    images/latex
+#  png_url:    /images/latex
+#  fenced_code_blocks: true
 
-redcloth:
-  hard_breaks: true
+
+#highlighter: pygments
+#pygments:    true
+
+#relative_permalinks: true
 
